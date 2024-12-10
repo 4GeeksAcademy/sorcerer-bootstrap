@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>logigram</title>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <h5 class="d-inline-block fs-5">logigram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Crea un nuevo post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                            <li><a class="dropdown-item" href="#">Privacidad y Seguridad</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Cerrar sesion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Caption:</h6>
+                <textarea class="form-control" placeholder="Add the caption of your post here"
+                    id="floatingTextarea2"></textarea>
+                <div class="row p-2">
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-2">
+    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                        role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://superadmin.es/blog/img/posts/medidas-para-instagram.jpg" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/d8/26/7a/d8267a8d5fb161569cd993172b36dc85.jpg" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/236x/4d/d5/ea/4dd5ea5795a14d2f3d2b7f7b9c1cf5d1.jpg" class="img-fluid w-100" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02efbef1-e26c-46c1-944d-4e15b93f42db/dei38cu-8d0dd8b5-7b88-4c74-99c3-0b2287b75ee2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZWZiZWYxLWUyNmMtNDZjMS05NDRkLTRlMTViOTNmNDJkYlwvZGVpMzhjdS04ZDBkZDhiNS03Yjg4LTRjNzQtOTljMy0wYjIyODdiNzVlZTIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4V99zQRgRPiFwQbR-1nIWVpXn50URiZ1xXbWM3UYkz0" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://m.media-amazon.com/images/S/pv-target-images/e9bff1c1f3a9fd1238ac9a06a766f4ec0f6dc2133c8f287c2401cf27c6f9ee60.jpg" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://tribusviajeras.com/wp-content/uploads/2024/04/La-mejor-guia-para-viajar-a-Laponia.webp" class="img-fluid w-100" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/41/96/65/41966563f7ba2ea1e7028d948019237c.jpg" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://assets.elplanteo.com/wp-content/uploads/2024/07/08114406/Hall-04.jpg?crop=smart&height=1349&width=1080&optimize=medium&dpr=1&auto=webp" class="img-fluid w-100" alt=""></div>
+                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://static.wikia.nocookie.net/houseofmouse20/images/3/3c/Male.jpeg/revision/latest?cb=20190413130122&path-prefix=es" class="img-fluid w-100" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                   
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-2">
+                                <div class="w-100 fs-4">@lavida.es.una</div>
+                                <small class="align-bottom">24/12</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://superadmin.es/blog/img/posts/medidas-para-instagram.jpg" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="p-2">
+                                <strong>586 Likes</strong>
+                                <p>vive la vida como la primera vez</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-1">
+                                
+                              <div class="w-100 fs-4">@cats.vang</div>
+                                <small>04/01</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://i.pinimg.com/736x/d8/26/7a/d8267a8d5fb161569cd993172b36dc85.jpg" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="d-flex p-2">
+                            <div class="p-2">
+                                <strong>94.563 Likes</strong>
+                                <p>un arte con uno mas hermoso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-1">
+                                
+                              <div class="w-100 fs-4">@sinverguenza</div>
+                                <small>09/12</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://m.media-amazon.com/images/S/pv-target-images/e9bff1c1f3a9fd1238ac9a06a766f4ec0f6dc2133c8f287c2401cf27c6f9ee60.jpg" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="d-flex p-2">
+                            <div class="p-2">
+                                <strong>11.000 Likes</strong>
+                                <p>enserio no has visto sinverguenza?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+</html>
